@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on [MindPal](https://github.com/hamza-hk7440/MindPal)
 
-- 👨‍💻 All of my projects are available at [very soon](very soon)
+- 👨‍💻 All of my projects are available at [very soon]
 
 - 📫 How to reach me **khlaiefhamza@gmail.com**
 
