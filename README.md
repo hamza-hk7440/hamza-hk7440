@@ -50,5 +50,5 @@
 
 <h3 align="left">🎮 My Contribution Activity</h3>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg" alt="Pacman Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg" alt="Pacman Contribution Graph" style="background-color: #0d1117;" />
 </p>
