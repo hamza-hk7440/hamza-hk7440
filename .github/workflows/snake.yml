@@ -1,29 +1,21 @@
 name: Generate Snake / Pacman Animation
 
 on:
-  schedule: # Runs every 12 hours
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Generate Snake / Pacman SVG
-        uses: Platane/snk@v3name: Generate Snake / Pacman Animation
-
-on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   generate:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
       - name: Generate Snake SVG
         uses: Platane/snk@v3
@@ -33,21 +25,7 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?color_snake=#39d353&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
       - name: Push Snake SVG to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#ffb534&color_dots=#121820
-          # This forces deep black/navy grid backgrounds instead of light-grey grids
-
-      - name: Push Snake SVG to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
