@@ -51,7 +51,7 @@
   <br><br>
 
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hamza-hk7440&layout=compact&langs_count=6&theme=highcontrast" height="125" /> &nbsp;
-  <img src="https://streak-stats.demolab.com/?user=hamza-hk7440&theme=highcontrast" height="125" />
+  <img src="https://streak-stats.demolab.com/?user=hamza-hk7440&theme=highcontrast" height="150" />
   
   <br><br>
 
