@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hamza-hk7440&label=Profile%20views&color=0e75b6&style=flat" alt="hamza-hk7440" /> </p>
 
-- 🔭 I’m currently working on [Football-Assistant](https://github.com/hamza-hk7440/Football-Assistant)
+- 🔭 I’m currently working on [heart-disease-prediction](https://github.com/hamza-hk7440/heart-disease-prediction)
 
 - 👨‍💻 All of my projects are available at https://hamza-delta-eosin.vercel.app/
 
