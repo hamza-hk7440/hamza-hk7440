@@ -43,12 +43,22 @@
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
 </p>
 
-<h3 align="left">🔥 GitHub Streak Stats</h3>
-<p align="left">
-  <img src="https://streak-stats.demolab.com?user=hamza-hk7440&theme=dark&hide_border=true" alt="Hamza's GitHub Streak" />
-</p>
+#### 🏆 GitHub Trophies
+<div align="center">
 
-<h3 align="left">🎮 My Contribution Activity</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake-dark.svg" alt="Pacman Contribution Activity" />
-</p>
+  <img src="https://github-profile-trophy-ahmed.vercel.app/?username=hamza-hk7440&theme=onestar&no-bg=true&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+
+  <br><br>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hamza-hk7440&layout=compact&langs_count=6&theme=highcontrast" height="125" /> &nbsp;
+  <img src="https://streak-stats.demolab.com/?user=hamza-hk7440&theme=highcontrast" height="125" />
+
+  <br><br>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg">
+  </picture>
+
+</div>
