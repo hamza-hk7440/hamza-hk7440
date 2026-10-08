@@ -6,9 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://hamza-delta-eosin.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-1F6FEB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+  <a href="https://hamza-delta-eosin.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-1F6FEB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 </p>
 
 <p align="center">
@@ -29,7 +27,7 @@
 
 <p align="center">
   <strong>Focus</strong><br />
-  <img src="https://img.shields.io/badge/Full%20Stack-1F6FEB?style=flat-square&logo=stackshare&logoColor=white" alt="Full Stack" />
+  <img src="https://img.shields.io/badge/Full%20Stack-1F6FEB?style=flat-square&logo=stackshare&logoColor=white" alt="AI" />
 </p>
 
 <p align="center">
@@ -68,6 +66,7 @@
 <p align="center">
   <strong>Data & AI</strong><br />
   <img src="https://img.shields.io/badge/AI-412991?style=flat-square&logo=openai&logoColor=white" alt="AI" />
+  
   <img src="https://img.shields.io/badge/RAG-0EA5E9?style=flat-square&logo=semanticweb&logoColor=white" alt="RAG" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
@@ -75,9 +74,6 @@
 
 ### 🏆 GitHub Achievements
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hamza-hk7440&theme=onedark&no-frame=true&no-bg=true&margin-w=10&row=1&column=7" alt="hamza-hk7440 trophies" />
-</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hamza-hk7440&show_icons=true&theme=tokyonight&hide_border=true" height="165" alt="hamza-hk7440 stats" />
