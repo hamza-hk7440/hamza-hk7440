@@ -87,6 +87,8 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamza-hk7440&layout=compact&theme=tokyonight&hide_border=true" height="165" alt="hamza-hk7440 top languages" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg" alt="hamza-hk7440 contribution graph" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg">
+</picture>
