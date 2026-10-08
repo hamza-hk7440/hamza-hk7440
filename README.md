@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://hamza-delta-eosin.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-1F6FEB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://hamza-delta-eosin.vercel.app/"><img src="https://img.shields.io/badge/My Portfolio-00307A?style=flat-square&logo=linkfire&logoColor=white" style="height:32px; object-fit:contain;" alt="Portfolio" /></a>
 </p>
 
 <p align="center">
