@@ -88,5 +88,5 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hamza-hk7440&theme=tokyo-night&area=true&hide_border=true" alt="hamza-hk7440 contribution graph" />
+  <img src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg" alt="hamza-hk7440 contribution graph" />
 </p>
