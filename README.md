@@ -6,14 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hamza-hk7440/heart-disease-prediction">
-    <img src="https://img.shields.io/badge/Current%20Project-Heart%20Disease%20Prediction-0A66C2?style=for-the-badge&logo=github&logoColor=white" alt="Current Project" />
-  </a>
   <a href="https://hamza-delta-eosin.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-1F6FEB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="mailto:khlaiefhamza@gmail.com">
-    <img src="https://img.shields.io/badge/Contact-Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Email" />
   </a>
 </p>
 
@@ -24,6 +18,7 @@
 ### 📤 Connect with Me
 
 <p align="center">
+  <a href="mailto:khlaiefhamza@gmail.com"><img src="https://img.shields.io/badge/Email-khlaiefhamza%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/hamzakhlaief"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://fb.com/hamzakhlaief"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
   <a href="https://instagram.com/hamzakhlaief"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
@@ -31,6 +26,11 @@
 </p>
 
 ### 🛠️ Technical Skills
+
+<p align="center">
+  <strong>Focus</strong><br />
+  <img src="https://img.shields.io/badge/Full%20Stack-1F6FEB?style=flat-square&logo=stackshare&logoColor=white" alt="Full Stack" />
+</p>
 
 <p align="center">
   <strong>Languages</strong><br />
@@ -53,6 +53,7 @@
 
 <p align="center">
   <strong>Backend & DevOps</strong><br />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
@@ -66,6 +67,8 @@
 
 <p align="center">
   <strong>Data & AI</strong><br />
+  <img src="https://img.shields.io/badge/AI-412991?style=flat-square&logo=openai&logoColor=white" alt="AI" />
+  <img src="https://img.shields.io/badge/RAG-0EA5E9?style=flat-square&logo=semanticweb&logoColor=white" alt="RAG" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
 </p>
@@ -86,5 +89,5 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hamza-hk7440&bg_color=1a1b27&color=70a5fd&line=38bdae&point=ffffff&area=true&hide_border=true" alt="hamza-hk7440 contribution graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hamza-hk7440&theme=tokyo-night&area=true&hide_border=true" alt="hamza-hk7440 contribution graph" />
 </p>
