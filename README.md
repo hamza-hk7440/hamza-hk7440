@@ -23,7 +23,7 @@
   <a href="https://discord.gg/N2vHcr6AA"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
-### `🛠️ Top Technical Skills`
+### 🛠️ Top Technical Skills
 
   <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60" alt="python logo"  />
