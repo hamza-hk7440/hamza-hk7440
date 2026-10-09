@@ -10,12 +10,18 @@ on:
 
 jobs:
   generate:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip pacman]')
     permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
+      - name: checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
       - name: generate pacman-contribution-graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -29,3 +35,48 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: update README cache-busting version
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          readme = Path("README.md")
+          content = readme.read_text(encoding="utf-8")
+          run_id = os.environ["RUN_ID"]
+          content = re.sub(
+              r'(https://streak-stats\.demolab\.com\?user=hamza-hk7440&theme=tokyonight&hide_border=true)(?:&v=\d+)?',
+              rf'\1&v={run_id}',
+              content,
+          )
+          content = re.sub(
+              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark\.svg)(?:\?v=\d+)?',
+              rf'\1?v={run_id}',
+              content,
+          )
+          content = re.sub(
+              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph\.svg)(?:\?v=\d+)?',
+              rf'\1?v={run_id}',
+              content,
+          )
+          readme.write_text(content, encoding="utf-8")
+          PY
+
+      - name: commit README cache-busting update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No README changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update README cache-busting [skip pacman]"
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
