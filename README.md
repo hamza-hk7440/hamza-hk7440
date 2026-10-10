@@ -77,7 +77,7 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hamza-hk7440&show_icons=true&theme=tokyonight&hide_border=true" height="165" alt="hamza-hk7440 stats" />
-  <img src="https://streak-stats.demolab.com?user=hamza-hk7440&theme=tokyonight&hide_border=true&v=37905015757" height="165" alt="hamza-hk7440 streak" />
+  <img src="https://streak-stats.demolab.com?user=hamza-hk7440&theme=tokyonight&hide_border=true&v=38021147402" height="165" alt="hamza-hk7440 streak" />
 </p>
 
 <p align="center">
@@ -85,7 +85,7 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark.svg?v=37905015757">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg?v=37905015757">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg?v=37905015757">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark.svg?v=38021147402">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg?v=38021147402">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph.svg?v=38021147402">
 </picture>
