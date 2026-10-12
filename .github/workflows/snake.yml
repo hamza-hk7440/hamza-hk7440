@@ -1,38 +1,42 @@
-name: generate pacman game
+name: generate contribution snake
 
 on:
-  schedule: # Run automatically every day
+  schedule: # Run automatically every day at midnight
     - cron: "0 0 * * *"
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # Allows manual triggering from the Actions tab
   push: # Runs on every push to the main branch
     branches:
       - main
 
 concurrency:
-  group: pacman-contribution-graph
+  group: generate-snake-animation
   cancel-in-progress: true
 
 jobs:
   generate:
-    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip pacman]')
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip snake]')
     permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
-      - name: checkout main branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           ref: main
 
-      - name: generate pacman-contribution-graph.svg
-        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+      - name: Generate Contribution Snake SVGs
+        uses: Platane/snk/svg-only@v3
+        id: snake-svg
         with:
           github_user_name: hamza-hk7440
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Push the generated SVG to the output branch
-      - name: push pacman-contribution-graph.svg to the output branch
+      # Push the generated SVGs to the 'output' branch
+      - name: Push snake SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
@@ -40,7 +44,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: update README cache-busting version
+      - name: Update README cache-busting version
         env:
           RUN_ID: ${{ github.run_id }}
         run: |
@@ -52,25 +56,23 @@ jobs:
           readme = Path("README.md")
           content = readme.read_text(encoding="utf-8")
           run_id = os.environ["RUN_ID"]
+          
+          # Update dark theme snake cache-busting parameter
           content = re.sub(
-              r'(https://streak-stats\.demolab\.com\?user=hamza-hk7440&theme=tokyonight&hide_border=true)(?:&v=\d+)?',
-              rf'\1&v={run_id}',
-              content,
-          )
-          content = re.sub(
-              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph-dark\.svg)(?:\?v=\d+)?',
+              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake-dark\.svg)(?:\?v=\d+)?',
               rf'\1?v={run_id}',
               content,
           )
+          # Update light theme snake cache-busting parameter
           content = re.sub(
-              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/pacman-contribution-graph\.svg)(?:\?v=\d+)?',
+              r'(https://raw\.githubusercontent\.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake\.svg)(?:\?v=\d+)?',
               rf'\1?v={run_id}',
               content,
           )
           readme.write_text(content, encoding="utf-8")
           PY
 
-      - name: commit README cache-busting update
+      - name: Commit README cache-busting update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -82,5 +84,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: update README cache-busting [skip pacman]"
+          git commit -m "chore: update README cache-busting [skip snake]"
           git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
