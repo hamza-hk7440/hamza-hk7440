@@ -81,8 +81,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake-dark.svg?v=41384360776">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake.svg?v=41384360776">
-    <img alt="github snake animation" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake.svg?v=41384360776">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake-dark.svg?v=41579893528">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake.svg?v=41579893528">
+    <img alt="github snake animation" src="https://raw.githubusercontent.com/hamza-hk7440/hamza-hk7440/output/github-contribution-grid-snake.svg?v=41579893528">
   </picture>
 </p>
